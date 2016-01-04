@@ -1,0 +1,56 @@
+<html> <!--this site is about links!-->
+	<head>
+		<title>links</title>
+	</head>
+	<body>
+		<h1 id = "links">links</h1>
+		
+		<ul>
+			<li><p>links are created using the <q>< a ></q> element. users can click on anything between to opening and closing tag.</p></li>
+			<li><p>you specify which page you want to link to by using the <q>href</q> attribute in the opening tag. e.g. <q> < a href = "http://www.bbc.co.uk" > bbc website < / a ></q> you need the full site name, http and all</p></li>
+			<li><p>you use the exact same method to link to to other pages within your website. instead of using a website in the href, you use your html document. it just needs to be in the same folder as the current page. e.g. <q> < a href = "contact.html" > contact us < / a ></q></p></li>
+		</ul>
+		<ol>
+			<li><a href = "http://www.bbc.co.uk">here is a link to the bbc website!</a></li>
+			<li><a href = "example.html">here is a link to another page!</a></li>
+		</ol>
+		
+		<h2 id = "relative urls">relative urls...</h2>
+		<ul>
+			<li><p>same folder = <q>< a href = "pagename.html"></q></p></li>
+			<li><p>child folder (in a folder) = <q>< a href = "folder/pagename.html"></q></p></li>
+			<li><p>grandchild folder (folder in a folder) = <q>< a href = "folder/folder/pagename.html"></q></p></li>
+			<li><p>parent folder (in previous folder) = <q>< a href = "../pagename.html"></q></p></li>
+			<li><p>grandparent folder (in folder before previous folder) = <q>< a href = "../../pagename.html"></q></p></li>
+		</ul>
+		
+		<h2 id = "email links">email links...</h2>
+		<ul>
+			<li><p>email links are used by putting <q> mailto: examplemail@email.com </q> just after href in the opening <q>< a ></q> tag. e.g. <q>< a href = "mailto: example@example.com"> email person < / a></q></p></li>
+			<li><p>email me! <a href = "mailto: jackleslie.gallacher@gmail.com">click here!</a></p></li>
+		</ul>
+		
+		<h2 id = "links in new tab">links in new tab...</h2>
+		<ul>
+			<li><p>to open a page in a new tab, add <q>target = "_blank"</q> after the href stuff. e.g. <q>< a href = "http://www.bbc.co.uk" target = "_blank" > opens in new tab < / a></q></p></li>
+			<li><a href = "http://www.bbc.co.uk" target = "_blank">here is a link to the bbc website! (opens in new tab)</a></li>
+		</ul>
+		
+		<h2 id = "page links">links to specific part of page...</h2>
+		<ul>
+			<li><p>to link to a specific part of another page, an id must be assigned to the desired section before you can jump to it e.g. <q>< h1 id = "top" > top < h1 ></q></p></li>
+			<li><p>you can then link to that part of the page using a href with a # in front of the id name. e.g. <q>< a href = "#top">top< / a ></q></p></li>
+			<li><p>you can also link to another websites id tags, as long as the have them such as: <q>< a href = "http://www.bbc.co.uk/#top">top of bbc page< / a ></q></p></li>		
+		</ul>
+		
+		<h2>some examples!</h2>
+		<ul>
+			<li><p><a href = "#links">top</a></p></li>
+			<li><p><a href = "#relative urls">relative urls</a></p></li>
+			<li><p><a href = "#email links">email links</a></p></li>
+			<li><p><a href = "#links in new tab">links in new tab</a></p></li>
+			<li><p><a href = "#page links">links to specific part of page</a></p></li>
+			
+		</ul>
+	</body>
+</html>
