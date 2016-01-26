@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>tables</title>
+	</head>
+	<body>
+		<h1 id = "Top">Tables...</h1>
+		
+		<ul>		
+			<li><p>a basic table is created within the <q>< table ></q>tag.</p></li>
+			<li><p>a row in that table is created using the <q>< tr ></q> tag in the same manner an ordered or unordered list is made.</p></li>
+			<li><p>the data in each row is inputted using the <q>< td ></q> tag, just like a list element is added.</p></li>
+			<li><p>table headings are placed within the <q>< th ></q> tag, within this the <i>scope</i> attribute is used where you can specificy if it is a coloumn header (col) or row (row). for example; <q>< th scope = "col" >this is my column< / th ></p></li>
+			<li><p>to add a blank row or column, just leave the space blank between then opening and closing tags, it helps to format the table</p></li>
+			<li><p>to make a cell span multiple columns, use the <i>colspan</i> attribute in the tabe data tag. for example: <q>< td colspan = "2">55< / td ></q><p></li>
+			<li><p>to make a cell span multiple rows, use the <i>rowspan</i> attribute in the tabe data tag. for example: <q>< td rowspan = "2">55< / td ></q><p></li>
+			<li><p>for long tables or to add a bit more order, you can use the <q>< thead ></q>, <q>< tbody ></q>, and <q>< tfoot ></q>, headings and such would go in the head, data in the body and footers in the foot. 
+		</ul>
+		<!--example of how a table is made.-->
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th scope = "col">column 1</th>
+					<th scope = "col">column 2</th>
+					<th scope = "col">column 3</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope = "row">row 1</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th scope = "row">row 2</th>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th scope = "row">row 3</th>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<th scope = "row" colspan = "3">This is actually spanning three columsn.</th>
+			</tfoot>
+		</table>
+		
+		
+	</body>
+</html>
