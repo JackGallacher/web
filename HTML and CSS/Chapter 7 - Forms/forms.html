@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>forms</title>
+	</head>
+	<body>
+		<h1 id = "Title">Forms...</h1>
+		<ul>
+			<li><p>A form is placed within the <q>< form ></q> tag</p></li>
+			<li><p>Every form element needs an "action" attribute. Its value is the URL for the page on the server that is receiving the form data. e.g. <q>< form action = "http//:www.example.com/subscribe.php"></q></p></li>
+			<li><p>Forms can be sent using two methods, "get" or "post".</p></li>
+				<ul>
+					<li><p>With the "get" method, values from the form are added to the end of the URL specified in the "action" attribute. this is ideal for short forms and when you are just retreiving data from a web server.</p></li>
+					<li><p>With the "post" method, values are sent in HTTP headers. You should use these when your form is; uploading a file, is very log, contains sensitive data or adds stuff to a database.</p></li>
+					<li><p>If no method is used, it will atomatically be set as the "get method"</p></li>
+					<li><p>e.g. <q>< form action = "http//:www.example.com/subscribe.php" method = "get" > example below...</q></p></li>
+					<form action = "http//:www.example.com/subscribe.php" method = "get">
+						<p>This is where the form data will go, doesnt really show it as a form... but look at the code!</p>
+					</form>
+				</ul>			
+		</ul>
+		<hr /><!--this draws a line across the page.-->
+		
+		<h2 id = "Input">The Input tag</h2>
+		<ul>
+			<li><p>The <q>< input ></q> tag is used to create several different form controls. the value of the type attribute determines what kind of input they will be creating</p></li>
+			<li><p>The <q>< type ></q> attribute is used in the input tag to define what type of input will be eneted by the user. for example <q>< input type = "text" ></q></p></li>			
+		</ul>
+		
+		<h2 id = "Text Input">Text Input</h2>
+		<ul>
+			<li><p>Text input is created by using the "text" input type. e.g.<q>< input type = "text" ></q></p></li>
+			<li><p>A "name" attribute must be given to each form so the server knows which forms control each peice of data was entered into. e.g. <q>< input type = "text"  name = "username"></q></p></li>
+			<li><p>The "size" attribute indicates the character width of the input box. although nowadays, this should be done with CSS. e.g.<q>< input type = "text"  name = "username" size = "15"></q></p></li>
+			<li><p>The "maxlength" attribute is used to limit the amount of character that can be typed into the input box. e.g.<q>< input type = "text"  name = "username" size = "15" maxlength - "5"></q></p></li>			
+		</ul>
+		<p>for example... <q>< input type = "text" name = "username" size = "15" maxlength = "5" / ></q> placed within the form tags with a paragrap saying "Username" looks like.</p>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>
+				Username:
+				<input type = "text" name = "username" size = "15" maxlength = "5" />
+			</p>
+		</form>
+
+	</body>
+</html>
