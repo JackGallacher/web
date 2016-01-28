@@ -40,6 +40,88 @@
 				<input type = "text" name = "username" size = "15" maxlength = "5" />
 			</p>
 		</form>
+		<h2 id = "Password Input">Password Input</h2>
+		<ul>
+			<li><p>Password input it layed out exactly like the text input, the only thing that changes is the "type" attribute. For passwords this needs to be changed to "password" instead of "text". e.g. <q>< input type = "password" name = "password" size = "15" maxlength = "5"/></q></p></li>
+		</ul>
+		<p>Example using both the username (from above) and the new password text box</p>
+			<form action = "http//:www.example.com/subscribe.php">
+				<p>
+					Username:
+					<input type = "text" name = "username" size = "15" maxlength = "5"/>
+				</p>
+				<p>
+					Password:
+					<input type = "password" name = "username" size = "15" maxlength = "5"/>
+				</p>			
+			</form>
+
+		<h2 id = "Text Area">Text Area</h2>
+		<ul>
+			<li><p>The <q>< textarea ></q> element is used to create multi-line text input. Unlike other input elements, this is not an empty element. it should have an opening and closing tag.</p></li>
+			<li><p>Any text between the <q>< textarea ></q> and <q>< / textarea ></q> tags will appear in the text box when the page is loaded.</p></li>
+			<li><p>The "cols" and "rows" attributes should not really be used, the size of the text box should be controlled by CSS<li><p>
+			<li><p>As usual, a textarea tag goes within a forms tag.</p></li>			
+		</ul>
+		<p>Example of a text area below.</p>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>What did you think of the gig?</p>
+			<textarea rows = "5" cols = "15">Input answer here...</textarea>
+		</form>
+		
+		<h2 id = "Radio Buttons">Radio Buttons</h2>
+		<ul>
+			<li><p>Radio buttons are crated inside the input tags and given the type of "radio". e.g. <q>< input type = "radio" / ></q></p></li>
+			<li><p>Radio buttons should be given a "name" attribute and "value" attribute. The "name" attribute is sent to the server and links to the specific radio buttons so data can be used. The "value" is the data value that is sent to the server.
+					for example: <q>< input type = radio name = "genre" value = "jazz" / ></q></p></li>
+			<li><p>You can also add a "checked" attribute to one radio button in your set which will load it checked. e.g. <q>< input type = radio name = "genre" value = "jazz" checked = "checked"/ ></q>		
+		</ul>
+		<p>Example of radio buttons...</p>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>
+				Please select your favorate genre of music:
+				<br />
+				
+				<input type = "radio" name = "genre" title = "Jazz" checked = "checked"/>Jazz<!--not how these are still in a paragraph tag. this lets us add text/names before the radio buttons.-->
+				<input type = "radio" name = "genre" title = "Rock"/>Rock
+				<input type = "radio" name = "genre" title = "Pop"/>Pop
+				
+			</p>
+		
+		</form>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	</body>
 </html>
