@@ -29,9 +29,9 @@
 		<h2 id = "Text Input">Text Input</h2>
 		<ul>
 			<li><p>Text input is created by using the "text" input type. e.g.<q>< input type = "text" ></q></p></li>
-			<li><p>A "name" attribute must be given to each form so the server knows which forms control each peice of data was entered into. e.g. <q>< input type = "text"  name = "username"></q></p></li>
-			<li><p>The "size" attribute indicates the character width of the input box. although nowadays, this should be done with CSS. e.g.<q>< input type = "text"  name = "username" size = "15"></q></p></li>
-			<li><p>The "maxlength" attribute is used to limit the amount of character that can be typed into the input box. e.g.<q>< input type = "text"  name = "username" size = "15" maxlength - "5"></q></p></li>			
+			<li><p>A "name" attribute must be given to each form so the server knows which forms control each peice of data was entered into. e.g. <q>< input type = "text"  name = "username"/ ></q></p></li>
+			<li><p>The "size" attribute indicates the character width of the input box. although nowadays, this should be done with CSS. e.g.<q>< input type = "text"  name = "username" size = "15"/ ></q></p></li>
+			<li><p>The "maxlength" attribute is used to limit the amount of character that can be typed into the input box. e.g.<q>< input type = "text"  name = "username" size = "15" maxlength - "5"/ ></q></p></li>			
 		</ul>
 		<p>for example... <q>< input type = "text" name = "username" size = "15" maxlength = "5" / ></q> placed within the form tags with a paragrap saying "Username" looks like.</p>
 		<form action = "http//:www.example.com/subscribe.php">
@@ -60,10 +60,9 @@
 		<ul>
 			<li><p>The <q>< textarea ></q> element is used to create multi-line text input. Unlike other input elements, this is not an empty element. it should have an opening and closing tag.</p></li>
 			<li><p>Any text between the <q>< textarea ></q> and <q>< / textarea ></q> tags will appear in the text box when the page is loaded.</p></li>
-			<li><p>The "cols" and "rows" attributes should not really be used, the size of the text box should be controlled by CSS<li><p>
+			<li><p>The "cols" and "rows" attributes should not really be used, the size of the text box should be controlled by CSS</li><p>
 			<li><p>As usual, a textarea tag goes within a forms tag.</p></li>			
 		</ul>
-		<p>Example of a text area below.</p>
 		<form action = "http//:www.example.com/subscribe.php">
 			<p>What did you think of the gig?</p>
 			<textarea rows = "5" cols = "15">Input answer here...</textarea>
@@ -76,23 +75,76 @@
 					for example: <q>< input type = radio name = "genre" value = "jazz" / ></q></p></li>
 			<li><p>You can also add a "checked" attribute to one radio button in your set which will load it checked. e.g. <q>< input type = radio name = "genre" value = "jazz" checked = "checked"/ ></q>		
 		</ul>
-		<p>Example of radio buttons...</p>
 		<form action = "http//:www.example.com/subscribe.php">
 			<p>
 				Please select your favorate genre of music:
 				<br />
 				
-				<input type = "radio" name = "genre" title = "Jazz" checked = "checked"/>Jazz<!--not how these are still in a paragraph tag. this lets us add text/names before the radio buttons.-->
+				<input type = "radio" name = "genre" title = "Jazz" checked = "checked"/>Jazz<!--note how these are still in a paragraph tag. this lets us add text/names before the radio buttons.-->
 				<input type = "radio" name = "genre" title = "Rock"/>Rock
-				<input type = "radio" name = "genre" title = "Pop"/>Pop
-				
-			</p>
-		
+				<input type = "radio" name = "genre" title = "Pop"/>Pop				
+			</p>		
 		</form>
 		
+		<h2 id = "Checkbox">Checkbox</h2>
+		<ul>
+			<li><p>A checkbox is made the same way as a radio button, the only thing that changes is the "type" attribute. It changes to "checkbox". e.g. <q>< input type = "checkbox" name = "genre" title = "Jazz" / > </q></p></li>
+			<li><p>With a checkbox, you can select multiple options, you can still select a box to be check too by using the checked = "checked" attribute</p></li>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>
+				Which is your favorate music streaming service?
+				<input type = "checkbox" name = "service" title = "Spotify" checked = "checked"/>Spotify
+				<input type = "checkbox" name = "service" title = "Last.fm"/>Last.fm
+				<input type = "checkbox" name = "service" title = "iTunes"/>iTunes			
+			</p>		
+		</form>
 		
+		<h2 id = "Drob Down">Drop Down List Box...</h2>
+		<ul>
+			<li><p>A drop down list (aka select box) allows on option to be selected from a drop down list. The <q>< select ></q> element is used to create this drop down box. it contains two or more <q>< option ></q> elements</p></li>
+			<li><p>Within the <q>< select ></q> element the attribute "name" must be given. This indicates the name of the form control being sent to the server, along with the value the user submitted. e.g. <q>< select name = "devices"></p></li>
+			<li><p>The <q>< option ></q> element is used to specify the options that the user can select from. The words between the opening "option" tag and closing "option tags will be shown the user drop down."e.g. <q>< select name = "devices">< option > iPod < / option >< / select ></q></p>
+			<li><p>The option element uses the "value" attribute to indicate the value that is sent to the server along with the name of the control if this option is selected. e.g. <q>< select name = "devices">< option value = "iPod"> iPod < / option >< / select ></q></p></li>
+			<li><p>The "selected" attribute can be used to indicate the option that should be selected when the page loads using selected = "selected" e.g. <q>< select name = "devices">< option value = "iPod" selected = "selected"> iPod < / option >< / select ></q></p></li>		
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>Please select your favorate device:</p>
+			<select name = "devices"><!--Only <option> tags can go between the <select> tags.-->
+				<option value = "iPod" selected = "selected">iPod</option>
+				<option value = "mp3">mp3</option>
+				<option value = "Minidisk">Minidisk</option>			
+			</select>
+		</form>
 		
+		<h2 id = "Multiple Select Box">Multiple Select Box...</h2>
+		<ul>
+			<li><p>You can turn a drop down select box into a box that shows more than one option by adding the "size" attribute within the "select" element. Its value should be the number of options you want to show at once. e.g. <q>< select name = "devices" size = 3></q></p></li>
+			<li><p>You can allows users to select multiple options from this list by adding the "multiple" attribute with a value of "multiple" e.g. <q>< select name = "devices" size = "3" multiple = "multiple" ></q></p> to select multiple after this, the control key must be help when selecting options</li>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>Please select your favorate device</p>
+			<select name = "devices" size = "3" multiple = "multiple">
+				<option value = "iPod">iPod</option>
+				<option value = "mp3">mp3</option>
+				<option value = "Minidisk">Minidisk</option>
+			</select>			
+		</form>
 		
+		<h2 name = "File Input Box">File Input Box...</h2>
+		<ul>
+			<li><p>If you want to allow users to upload a file, you will need to use a file input box.</p></li>
+			<li><p>To do this, add type = "file" into the "input" element. This type of input creates a box that looks like a text input followed by a browse button. e.g. <q>< input type = "file" name = "user_file"/ ></q></p></li>
+			<li><p>To send data of your form to the server, add the type "submit" into a new input elemnet inside your form with the "value" attribute determining the words shown on the button. You can add a "name" attribute but it is not needed. e.g.
+				  <q>< input type = "submit" name = "upload" value = "upload" ></q></p></li>
+			<li><p>When you are allowing users to upload files, the method attribute on the "form" element must have a value of "post". e.g. <q>< form action = "http//:www.example.com/subscribe.php" method = "post" ></q>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php" method = "post">
+			<p>Upload your file below.</p>
+			<input type = "file" name = "user_file"/><br />
+			<input type = "submit" value = "upload"/><!--This submits the contents of the form it is in to the "action" location in the form attribute.--->
+		</form>
+
 		
 		
 		
