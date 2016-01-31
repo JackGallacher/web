@@ -99,10 +99,10 @@
 				<input type = "checkbox" name = "service" title = "iTunes"/>iTunes			
 			</p>		
 		</form>
-		
-		<h2 id = "Drob Down">Drop Down List Box...</h2>
+				
+		<h2 id = "Selection Box">Selection Box (Drop Down)...</h2>
 		<ul>
-			<li><p>A drop down list (aka select box) allows on option to be selected from a drop down list. The <q>< select ></q> element is used to create this drop down box. it contains two or more <q>< option ></q> elements</p></li>
+			<li><p>A select box (aka drop down) allows on option to be selected from a drop down list. The <q>< select ></q> element is used to create this drop down box. it contains two or more <q>< option ></q> elements</p></li>
 			<li><p>Within the <q>< select ></q> element the attribute "name" must be given. This indicates the name of the form control being sent to the server, along with the value the user submitted. e.g. <q>< select name = "devices"></p></li>
 			<li><p>The <q>< option ></q> element is used to specify the options that the user can select from. The words between the opening "option" tag and closing "option tags will be shown the user drop down."e.g. <q>< select name = "devices">< option > iPod < / option >< / select ></q></p>
 			<li><p>The option element uses the "value" attribute to indicate the value that is sent to the server along with the name of the control if this option is selected. e.g. <q>< select name = "devices">< option value = "iPod"> iPod < / option >< / select ></q></p></li>
@@ -131,12 +131,10 @@
 			</select>			
 		</form>
 		
-		<h2 name = "File Input Box">File Input Box...</h2>
+		<h2 id = "File Input Box">File Input Box...</h2>
 		<ul>
 			<li><p>If you want to allow users to upload a file, you will need to use a file input box.</p></li>
 			<li><p>To do this, add type = "file" into the "input" element. This type of input creates a box that looks like a text input followed by a browse button. e.g. <q>< input type = "file" name = "user_file"/ ></q></p></li>
-			<li><p>To send data of your form to the server, add the type "submit" into a new input elemnet inside your form with the "value" attribute determining the words shown on the button. You can add a "name" attribute but it is not needed. e.g.
-				  <q>< input type = "submit" name = "upload" value = "upload" ></q></p></li>
 			<li><p>When you are allowing users to upload files, the method attribute on the "form" element must have a value of "post". e.g. <q>< form action = "http//:www.example.com/subscribe.php" method = "post" ></q>
 		</ul>
 		<form action = "http//:www.example.com/subscribe.php" method = "post">
@@ -144,6 +142,34 @@
 			<input type = "file" name = "user_file"/><br />
 			<input type = "submit" value = "upload"/><!--This submits the contents of the form it is in to the "action" location in the form attribute.--->
 		</form>
+		
+		<h2 id = "Submit button">Submit Button...</h2>
+		<ul>
+			<li><p>To send data of your form to the server, add the type "submit" into a new input element inside your form with the "value" attribute determining the words shown on the button. You can add a "name" attribute but it is not needed. e.g.
+			<q>< input type = "submit" name = "upload" value = "upload" ></q></p></li>
+		</ul>
+				
+		<h2 id = "Image Button">Image Button...</h2>
+		<ul>
+			<li><p>If you want to use an image for the submit button you can give it the type attribute with a value of "image". e.g. <q>< input type = "image" /></q></p></li>
+			<li><p>To upload the image to the button, you use "src", "width", "height" and "alt" attributes. they work exactly the same as the do when using and "< image >" tag. e.g. <q>< input type = "image" src = "website/images/myimage.jpg" width = "10" height = "15" />
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>Here is a submit button of my dog teddy</p>
+			<input type = "image" src = "images/teddy.jpg" height = "100" width = "100"/>
+		</form>
+
+		<h2 id = "Button and Hidden Controls">Button and Hidden Controls...</h2>
+		<ul>
+			<li><p>The <q>< button ></q> element allows you to combine text and images on a button by putting these attributes between the button tag. e.g. <q><  button >< image src = "images/teddy.jpg" height = "25" width = "25">Teddy!< / button ></q></p></li>
+			<li><p>The type = "hidden" attribute used within input elements allows authors to add values to froms that the users cant see. e.g. <q>< input type = "hidden" name = "bookmark" / ></p></li>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">
+		<form>
+			<button><image src = "images/teddy.jpg" height = "25" width = "25"/>Teddy!</button>
+			<input type = "hidden" name = "teddybutton" value = "teddy"/>
+		</form>
+		
 
 		
 		
