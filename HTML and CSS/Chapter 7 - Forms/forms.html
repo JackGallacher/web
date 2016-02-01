@@ -170,6 +170,51 @@
 			<input type = "hidden" name = "teddybutton" value = "teddy"/>
 		</form>
 		
+		<h2 id = "Labelling From Controls">Labelling Form Controls</h2>
+		<ul>
+			<li><p>Each form control should have its own <q>< label ></q> element as this makes it accesible to vision impaired users.</p></li>
+			<li>
+				<p>The <q>< label ></q> element can be used in two ways, it can:</p>
+				<ul>
+					<li><p>Wrap around both text description and the form input. e.g. <q>< label >Age: < input type = "text" name = "age" / >< label ></q></p></li>
+					<li><p>Be kept seperate from the form control and use the "for" attribute to indicate which form control it is a label for. e.g. 
+						<br /><q>< input id = "female" type = "radio" name = "gender" / ></q><br />
+						<q>< label for = "female">Female< / label ></q>
+				</ul>
+			</li>
+			<li><p>The "for" attribute states which form control the label belongs to. Note how the radio button above uses the "id" attribute. The value of the "id" attribute uniquely identifies an element from all other elements on a page.</p></li> 
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php" method = "post"><!--remember, use method = "post" if data is being sent to the server.-->
+			<label for = "Age">Age</label><!--It displays the code from left to right, if this was put below the input, it would show on its right hand side.-->
+			<input id = "Age" type = "input" name = "age">
+			
+			<input id = "female" type = "radio" name = "gender" value = "f">
+			<label for = "female">Female</label>
+			
+			<input id = "male" type = "radio" name = "gender" value = "f">
+			<label for "male">Male</label>							
+		</form>
+		
+		<h2 id = "Grouping Form Elements">Grouping Form Elements</h2>
+		<ul>
+			<li><p>You can group related for controls together inside the <q>< fieldset ></q> element. This is particularly helpful for longer forms.</p></li>
+			<li><p>Most browsers will show the fieldset with a line around the edge to show how they are related. The appearance can be changed in CSS</p></li>
+			<li><p>The <q>< legend ></q> element can come directly after the opening <q>< fieldset ></q> tag and contains a caption which helps identify the purpose of that group of form controls</p></li>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php" method = "post">
+			<fieldset>
+				<legend>Contact Details</legend>				
+				<label for = "Email">Email</label><br />
+				<input id = "Email" type = "text" name = "email"><br />				
+				<label for = "Mobile">Mobile</label><br />
+				<input id = "Mobile" type = "text" name = "mobile" maxlength = "11"><br />
+				<label for = "Telephone">Telephone</label><br />
+				<input id = "Telephone" type = "text" name = "telephone" maxlength = "11">
+			</fieldset>
+		</form>
+		
+		
+		
 
 		
 		
