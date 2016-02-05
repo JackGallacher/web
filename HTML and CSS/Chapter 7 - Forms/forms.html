@@ -242,6 +242,35 @@
 			<input type = "submit" value = "enter date">
 		</form>
 		
+		<h2 id = "HTML5: Email and URL Input">HTML5: Email and URL Input</h2>
+		<ul>
+			<li><p>HTML5 has also introduced inputs that allow visitors to enter email addresses and URL's. Browsers that don't support these input boxes will just treat them as text boxes.</p></li>
+			<li><p>If you ask the user fan an email, you can use the "email" input. Supported browsers will check the user has provided the correct information. e.g. <q>< input type = "email" name = "email" / ></q></p></li>
+			<li><p>A "URL" input can be used when you are asking the user for a web page address. e.g. <q>< input type = "url" name = "url" / ></q></p></li>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">			
+			<label>Enter email: <input type = "email" name = "email"/></label>
+			<input type = "submit" value = "submit email"/>
+		</form>
+		<form action = "http//:www.example.com/subscribe.php">			
+			<label>Enter URL: <input type = "url" name = "url"/></label>
+			<input type = "submit" value = "submit url"/>	
+		</form>
+		
+		<h2 id = "HTML5: Search Input">HTML5: Search Input</h2>
+		<ul>
+			<li><p>If you want to create a single line text box for search queries, HTML5 provides a special type of input for that purpose.</p></li>
+			<li><p>To create a HTML5 search box the <q>< input ></q> element should have a type attribute with the value of "search" e.g. <q>< input value = "search" name = "search" / ></q></p></li>
+			<li><p>On any text input, you can also use an attribute called "placeholder" whose value is text that will be shown in the text box until the user clicks in that area. e.g. <q>< input type = "search" placeholder = "type here to search..." / ></q></p></li>
+		</ul>
+		<form action = "http//:www.example.com/subscribe.php">
+			<p>Search:</p>
+			<input type = "search" name = "search" placeholder = "type here to search..."/>
+			<input type = "submit" name = "submit"/>
+		</form>
+		<hr />
+		
+		
 		
 
 		
