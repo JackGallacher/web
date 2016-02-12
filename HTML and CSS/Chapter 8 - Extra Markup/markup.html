@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<title>extra markup</title>
+		<meta name = "description" content = "a page about extra markup"/>
+		<meta name = "keywords" content = "extra, markup, html"/>
+		<meta name = "robots" content = "nofollow"/>
+		<meta http-equiv = "author" content = "Jack Gallacher"/>
+		<meta http-equiv = "pragma" content = "no-cache"/>
+		<meta http-equiv = "expires" content = "Frim 04 Apr 2016 23:59:59 GMT"/>
 	</head>
 	<body>
 		<h1 id = "Title">Extra Markup</h1>	
@@ -23,6 +29,7 @@
 		<h2 id = "Class Attribute">Class Attribute</h2>
 		<ul>
 			<li><p>Every HTML element can also have a "class" attribute. Sometimes, rather than uniquely identifying one element within a document, you will want a way to identify several elements on the page. e.g. <q>< p class = "important info" > important paragraph stuff < / p></q></p></li>
+			<li><p>This also helps you add CSS to all class members giving them the same look without having to alter each one individually.</p></li>
 		</ul>
 		
 		<h2 id = "Block Elements">Block Elements</h2>
@@ -46,5 +53,60 @@
 				<li><p>To use the div tag, put your code between an opening <q>< div id = "example"</q> and closing <q>< / div ></q> tags.</p></li>
 			</ul>
 		</div> <!--a list to describe div tags-->	
+		
+		<div id = "Grouping Taxt and Elements Inline">
+			<h2 id = "Grouping Taxt and Elements Inline">Grouping Taxt and Elements Inline</h2>
+				<ul>
+					<li><p>The <q>< span ></q> element acts like and inline eqivilant of the "div" element. It is used to either<p/></li>
+					<ul>
+						<li><p>1: Contain a section of text where there is no other auitable element to differetiate it from its surrounding text</p></li>
+						<li><p>2: Contains a number of inline elements</p></li>						
+					</ul>
+					<li><p>This is the most common reason why people use the span elements is so that they can control the apprearance of the content of those elements using CSS</p></li>
+					<li><p>You will usually see that a class or id attributes used with the span attribute to explain the purpose of the span attribute and so that CSS styles can be applied to the elements tht have specific values for these attributes.</p></li>
+					<li><p>For example: The art was exibited at the <q>< span class = "gallery" >Tate Modern < / span > </p> in London</li></p>
+				</ul>	
+		</div><!--a list about how to group texts and elements inline.-->
+		
+		<h2 id = "IFrames">IFrames</h2>
+		<ul>
+			<li><p>An iframe is like a little window that has been cut into your page - and in that page you can see another page. The term iframe in an abbreviation of "inline frame"</p></li>
+			<li><p>An iframe is created by using the <q>< iframe ></q> element. There are a few attributes that you will need to know to use it:</p></li>
+				<ul>
+					<li><p>"src" The src attribute specifies the url of the page you want to show. e.g. <q>< iframe src = "http//:www.bbc.co.uk" >< / iframe ></q></li></p>
+					<li><p>"height" and "width" are used to determine the size of the iframe. e.g. <q>< iframe src = "http//:www.bbc.co.uk" height = "350" width = "450">< / iframe ></q></li></p>
+					<li><p>In HTML5, a new attribute called "seamless" can be applied where scrollbars (depreciated, used in HTML4) are not desired, using seamless doesnt require a vlue but can be given the value of "seamless". e.g. <q>< iframe src = "http//:www.bbc.co.uk" height = "350" width = "450" seamless = "seamless">< / iframe ></q></li></p>
+				</ul>
+		</ul>
+		<iframe src = "http://www.bbc.co.uk/" height = "350" width = "450" seamless = "seamless"></iframe >
+		
+		<h2 id = "Information about your pages">Information about your pages</h2>
+		<ul>
+			<li><p>The <q>< meta ></q> element lives inside the head of a webpage and contains information about that webpage, it is usually joined by an name attrbute and a content attribute. e.g. <q>< meta name = "description" content = "meta example" / ></q></p></li>
+			<li><p>Some defined values for this attribute that are commonly used are: "description", "keywords" and "robots". robots indicates if search engines should see this page, a values of "noindex" can be used if this page should not be added. A value of "nofollow" can be used if search
+			engines should add this page but not any pages that it links to</p></li>
+			<li><p>The meta element also uses the "http-equiv" and "content" attribute in pairs. examples of "http-equiv" include "pragma" which prevents the browser from cacheing the page and "expires" which indicates when a page should expire.</p></li>
+		</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	</body>
 </html>
