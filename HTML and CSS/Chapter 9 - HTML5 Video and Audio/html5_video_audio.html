@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 video and audio</title>
+		<meta name = "description" content = "a webpage telling you how to implement HTML5 Video and Audio into your webpages">
+		<meta name = "keywords" content = "html5, video, audio">
+		<meta name = "author" content = "Jack Gallacher">	
+	</head>	
+	<body>
+		<h1 id = "Title" class = "headings"> HTML5 Video and Audio</h1>
+		<h2 id = "Adding video your pages" class = "headings">Adding video your pages</h2>
+		<ul>
+			<li><p>The <q>< video ></q> element has a number of attributes that allow you to control video playback:</p></li>
+			<ul>
+				<!--NOTE: you do not need to add values for all attributes, just stating them will enample them. for example, the "loop" attribute if just stated it will automatically loop the video-->
+				<li><p>"src": This attribute specifies the path to the video</p></li>
+				<li><p>"poster": This attribute allows you to specify and image to show while the video is downloading or until the user tells the video to play.</p></li>
+				<li><p>"width" and "height": These attributes specify the width and the height of the video.</p></li>
+				<li><p>"controls"; This attribute indicates whther the browser should supply its own controls for playback.</p></li>
+				<li><p>"autoplay": This specifies whether the video should start playing when the page loads.</p></li>
+				<li><p>"loop": This states whether the video file should loop or not</p></li>
+				<li><p>"preload": This tells the browser what to do when the page loads. it can have one of three values:</p></li>
+				<ul>
+					<li><p>"none": The browser should not load the video until the user presses play</p></li>
+					<li><p>"auto": The browser should download the video when the page loads</p></li>
+					<li><p>"metadata": The browser should just collect information such as the size, first frame, tracklist and duration</p></li>
+				</ul>
+			</ul>
+			<li><p>For example: <q>< video src = "myvideo.mp4" poster = "images/teddy.jpg" width = "400" height = "300" preload = "auto" controls loop > < p >A vido that I have used on my website < / p>< / video ></q></p></li>
+		</ul>
+		
+		<video src = "video/dontask.mp4" width = "400" height = "300" preload = "auto" controls>
+			<p>Dont ask, it was the first mp4 I found</p>
+		</video>
+	
+	</body>
+</html>
