@@ -32,6 +32,21 @@
 		<video src = "video/dontask.mp4" width = "400" height = "300" preload = "auto" controls>
 			<p>Dont ask, it was the first mp4 I found</p>
 		</video>
+		
+		<h2 id = "Multiple video sources" class = "headings">Multiple video sources</h2>
+		<ul>
+			<li><p>To specify the location of the file to be played, you can use the <q>< source ></q> element inside the <q>< video ></q> element. (This should replace thesrc attribute on the opening <q>< video ></q> tag.) e.g. 
+			<q>< video width = "400" height = 300 preload = "auto" controls >< source src = "video/dontask.mp4" / >< p >this is a video< / p >< / video ></q></p></li>
+			<li><p>You can use multiple <q>< source ></q> elements to specify that the video is available in different formats.</p></li>
+			<li><p>You should use the "type" attribute to tell the borwser what format the video is in e.g. <q>< video src = "myvideo.mp4" type ='video/mp4; codecs = "vp8, vorbis"'  >< / video ></q></p></li>
+			<li><p>The "codec" thatwas used to encode the vidoe is supplied within the type attribute. Note the use of single quotes, as well asdouble qutes in the type attribute, when it is supplied.</p></li>
+			<li><p>If the browser does not support the format of video used, it will display any text the is between the two <q>< video ></q> tags.</p></li>		
+		</ul>
+		
+		<video width = "400" height = "300" preload = "auto" controls type = 'video/mp4; codecs = "vp8, vorbis"'>
+			<source src = "video/dontask.mp4"/>
+				<p>Dont ask, it was the first mp4 I found</p>
+		</video>
 	
 	</body>
 </html>
