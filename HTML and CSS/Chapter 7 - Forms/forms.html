@@ -249,11 +249,11 @@
 			<li><p>A "URL" input can be used when you are asking the user for a web page address. e.g. <q>< input type = "url" name = "url" / ></q></p></li>
 		</ul>
 		<form action = "http//:www.example.com/subscribe.php">			
-			<label>Enter email: <input type = "email" name = "email"/></label>
+			<label>Enter email: <input type = "email" name = "email" placeholder = "enter email here..."/></label>
 			<input type = "submit" value = "submit email"/>
 		</form>
 		<form action = "http//:www.example.com/subscribe.php">			
-			<label>Enter URL: <input type = "url" name = "url"/></label>
+			<label>Enter URL: <input type = "url" name = "url" placeholder = "enter password here..."/></label>
 			<input type = "submit" value = "submit url"/>	
 		</form>
 		
@@ -266,7 +266,7 @@
 		<form action = "http//:www.example.com/subscribe.php">
 			<p>Search:</p>
 			<input type = "search" name = "search" placeholder = "type here to search..."/>
-			<input type = "submit" name = "submit"/>
+			<input type = "submit"/ value  = "submit"><!--by not giving the submit button a "name" when it is pressed the name value of the other input will be assigned to the value that was typed into in when the submit button was pressed, e.g. search = dogs->
 		</form>
 		<hr />
 		

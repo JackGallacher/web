@@ -47,6 +47,48 @@
 			<source src = "video/dontask.mp4"/>
 				<p>Dont ask, it was the first mp4 I found</p>
 		</video>
-	
+		
+		<h2 id = "Adding audio to your pages" class = "headings">Adding audio to your pages</h2>
+		<ul>
+			<li><p>HTML5 Introduced the <q>< audio ></q> element to include audio files in your pages. As with HTML5 video, browsers expect different formats for the audio.</p></li>
+			<li><p>The <q>< audio ></q> element has a number of attributes which allow you to control audio playback</p></li>
+			<ul>
+				<li><p>"src": This specifies the path to the audio file</p></li>
+				<li><p>"controls": This attribute indicates whther the browser should supply its own controls for playback.</p></li>
+				<li><p>"autoplay": This specifies whether the video should start playing when the page loads.</p></li>
+				<li><p>"loop": This states whether the video file should loop or not</p></li>
+				<li><p>"preload": This tells the browser what to do when the page loads. it can have one of three values:</p></li>
+			</ul>
+			<li><p>For example: < q> < audio src = "audo/song.ogg" preload = "auto" controls >< p >this browser does not support this format, bacuase you can see this message...< p >< / audio ></q>
+		</ul>
+		
+		<audio src = "audio/song.ogg" preload = "auto" controls>
+			<p>this browser does not support this format, bacuase you can see this message...</p>
+		</audio>
+		
+		<h2 id = "Multiple audio sources" class = "headings">Multiple audio sources</h2>
+		<ul>
+			<li><p>It is possible to specify more than one audio file using the <q>< source ></q> elementbetween the opening and closing <q>< audio ></q> tags. (instead of using the "src" attribute on the first audio tag)</p></li>
+			<li><p>This is important becuase different browsers support different formates for audio files</li></p>
+			<ul>
+				<li><p><b>MP3</b>: Safari 5+, Chrome 6+, IE9</p></li>
+				<li><p><b>Ogg Vorbis</b>: Firefox 3.6, Chrome 6, Opera 1.5</p></li>
+			</ul>
+		</ul>	
+		
+		<audio preload = "auto" controls>
+			<source src = "audio/song.ogg"/>
+				<p>this browser does not support this format, bacuase you can see this message...</p>
+		</audio>
+
+
+
+
+
+
+
+
+
+		
 	</body>
 </html>
