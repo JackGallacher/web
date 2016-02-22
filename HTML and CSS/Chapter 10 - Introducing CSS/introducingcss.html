@@ -4,10 +4,22 @@
 	<meta name = "description" content = "a webpage covering the basics of CSS">
 	<meta name = "keywords" content = "html, css">
 	<meta name = "author" content = "Jack Gallacher">
+	
+	<link href = "CSS/style.css" type = "text/css" rel = "stylesheet"/>
+	
 </head>
 <body>
 	<h1 id = "title" class = "headings">Introducing CSS</h1>
+	<h2 id = "Using external CSS" class = "headings">Using external CSS</h2>
 	<ul>
-		<li><p>
+		<li><p>The <q>< link ></q> element can be used in a HTML document to tell the browser where to find the CSS file used to style the page. It is an emply element (meaning that it does not haveto have a closing tag) and it lives inside the <q>< head ></q> element.
+		it should use three attributes</p></li>
+		<ol>
+			<li><p>"href": this specifies the path to the CSS file. (which is often places in a folder called CSS or Styles)</p></li>
+			<li><p>"type": this attribute specifies the type of document being linked to. The value should be "text/css".</p></li>
+			<li><p>"rel": thr specifies the relatinship between the HTML page and the file it is linked to. The value of this should be "stylesheet" when linking to a CSS file</p></li>			
+		</ol>
+		<li><p>An HTML page can use more that one CSS style sheet. To do this, it could have a <q>< link ></q> element for every CSS file it uses. some users use this method to have one CSS for fonts and another for layout</p></li>
+		<li><p>For example: <q>< link href = "CSS/layout" type = "text/css" rel = "stylesheet"/ ></q>
 	</ul>
 </body>
