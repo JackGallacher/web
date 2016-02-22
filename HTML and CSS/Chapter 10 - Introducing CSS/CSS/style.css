@@ -4,7 +4,7 @@ body/*the "body" name applies the stype to the entire body of the html document,
 	background-color: rgb(185, 179, 175);
 }
 
-.headings/*the . infront of the "heading part is to apply this style to all the elements with the "class" called "headings"*/
+.headings/*the . infront of the "headings" part is to apply this style to all the elements with the "class" called "headings"*/
 {
 	color: rgb(255,255,255);
 }

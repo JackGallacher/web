@@ -7,6 +7,13 @@
 	
 	<link href = "CSS/style.css" type = "text/css" rel = "stylesheet"/>
 	
+	<style type = "text/css">
+	#UsingInternalCSS
+	{
+		color: rgb(255, 255, 0);<!--the # infront of the section name is used when you want to apply CSS to an id of an element.-->
+	}
+	</style>
+	
 </head>
 <body>
 	<h1 id = "title" class = "headings">Introducing CSS</h1>
@@ -21,5 +28,11 @@
 		</ol>
 		<li><p>An HTML page can use more that one CSS style sheet. To do this, it could have a <q>< link ></q> element for every CSS file it uses. some users use this method to have one CSS for fonts and another for layout</p></li>
 		<li><p>For example: <q>< link href = "CSS/layout" type = "text/css" rel = "stylesheet"/ ></q>
+	</ul>
+	
+	<h2 id = "UsingInternalCSS">Using Internal CSS</h2>
+	<ul>
+		<li><p>You can also include CSS rules within an HTML page by placing them inside a <q>< style ></q> element, which usually sits within the <q>< head ></q> element of the page.</p></li>
+		<li><p>The style attribute should use the "type" attribute to indicate that the styles are specified in CSS. The value should be "text/css". e.g. <q>< style type = "text/css" > CSS CODE HERE < / style ></q></p></li>
 	</ul>
 </body>
