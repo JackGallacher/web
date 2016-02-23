@@ -48,6 +48,7 @@
 					<th scope = "col" width = "150">Example</th>
 				</tr>
 			</thead>
+			<tbody>
 				<tr>
 					<th scope = "row" width = "150">Univeral Selector</th>
 					<td>Applies to all elements in the document</td>
@@ -60,15 +61,35 @@
 				</tr>
 				<tr>
 					<th scope = "row" width = "150">Class Selector</th>
-					<td width = "150">Matches an element whose class attribute has a value the matches the specified after the full stop</td>
+					<td width = "150">Matches an element whose class attribute has a value the matches the specified after the full stop "."</td>
 					<td width = "150"><q>.headings {}</q> Targets any element that has the class element of "heading"</td>
 					<td width = "150"><q>p.headings {}</q> Targets any element with the <q> < p ></q> tag whose class has the element of "heading"</td>
 				</tr>
-			
-			<tbody>
+				<tr>
+					<th scope = "row" width = "150">ID Selector</th>
+					<td width = "150">Matches an element whose id attribute has a value that matches the one specified after the "£" or "#" symbol</td>
+					<td width = "150"><q>#introduction</q> targets the element whose id attribute has a value of "introduction"</td>
+				</tr>
+				<tr>
+					<th scope = "row" width = "150">Child Selector</th>
+					<td width = "150">Matches an element that is a direct child of another</td>
+					<td width = "150"><q>li > a {}</q>Targets any <q>< a ></q> elements that re children of an <q>< li ></q> element but not other "a" elements in the page</td>
+				</tr>
+				<tr>
+					<th scope = "row" width = "150">Descendant Selector</th>
+					<td width = "150">Matches an element that is a descendent of another specified element (not just the direct child of that element)</td>
+					<td width = "150"><q>p a {}</q>Targets any <q>< a ></q> elements that sit inside of a<q>< p ></q> element even if there are other elements nested between them</td>
+				</tr>
+				<tr>
+					<th scope = "row" width = "150">Adjacent sibling selector</th>
+					<td width = "150">Matches an element that is the next sibling of another</td>
+					<td width = "150"><q>h1 + p {}</q>Targets the first<q>< p ></q> element after any<q>< h1 ></q> element (but not another p elements)</td>
+				</tr>
+				<tr>
+					<th scope = "row" width = "150">General sibling selector</th>
+					<td width = "150">Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+					<td width = "150"><q>h1 ~ p {}</q>If you had two<q>< p ></q> elements that are sibling of a<q>< h1 ></q> element, this rule would apply to both.</td>
+				</tr>			
 			</tbody>
-			
-			<tfoot>
-			</tfoot>
 		</table>
 </body>
