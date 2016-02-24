@@ -8,3 +8,29 @@ body/*the "body" name applies the stype to the entire body of the html document,
 {
 	color: rgb(255,255,255);
 }
+
+#CSSCascade/*alters all of the elements with the id "CSSCascade"*/
+{
+	color: rgb(0,255,0);
+}
+#cascadelist/*alters all of the elements with the id "cascade list"*/
+{
+	color: rgb(0,255,0);
+}
+li#specific/*alters all of the li tages with the id of "specific"*/
+{
+		color: rgb(255,255,0);
+}
+table /*alters all of the elements within the table tags*/
+{
+	color: rgb(108,165,122);
+}
+tr > td/*alters all of the td tags that are within any tr tags*/
+{
+		color: rgb(0,0,255);
+}
+
+tr th/*alters any th element that is within a tr tag.*/
+{
+	color: rgb(255,0,0);
+}

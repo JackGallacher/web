@@ -73,12 +73,14 @@
 				<tr>
 					<th scope = "row" width = "150">Child Selector</th>
 					<td width = "150">Matches an element that is a direct child of another</td>
-					<td width = "150"><q>li > a {}</q>Targets any <q>< a ></q> elements that re children of an <q>< li ></q> element but not other "a" elements in the page</td>
+					<td width = "150"><q>li > a {}</q>Targets any <q>< a ></q> elements that re children of an <q>< li ></q> element but not other "a" elements in the page. e.g. directly after the parent tag</td>
+					<td width = "150">example: <a href = https://learnwithkray.com/html-css/descendant-vs-child-selectors-in-css>here</a>
 				</tr>
 				<tr>
 					<th scope = "row" width = "150">Descendant Selector</th>
 					<td width = "150">Matches an element that is a descendent of another specified element (not just the direct child of that element)</td>
-					<td width = "150"><q>p a {}</q>Targets any <q>< a ></q> elements that sit inside of a<q>< p ></q> element even if there are other elements nested between them</td>
+					<td width = "150"><q>p a {}</q>Targets any <q>< a ></q> elements that sit inside of a<q>< p ></q> element even if there are other elements nested between them. e.g. doesnt have to be directly after like the child selector</td>
+					<td width = "150">example: <a href = https://learnwithkray.com/html-css/descendant-vs-child-selectors-in-css>here</a>
 				</tr>
 				<tr>
 					<th scope = "row" width = "150">Adjacent sibling selector</th>
@@ -92,4 +94,44 @@
 				</tr>			
 			</tbody>
 		</table>
+		
+	<h2 id = "CSSCascade" class = "headings">How CSS rules cascade</h2>
+	<ul id = "cascadelist">
+		<li id = "specific"><p>If there are two or more rules that apply to the same element, it is important to understand which will take precedence.</p></li>
+		<li><p>If the two selectors are identical, the latter of the two will take precedence.</p></li>
+		<li><p>If one selector is more specific than the others, the more specific rule will take precedence over more general ones. for example, h1{} is more specific than *{}, p b{} is more specific than p, and p#inro is more specific than p
+		<li><p>You can add "!important" after any property value to indicate that it should be considered more important than the other rules</p></li>
+	</ul>
+	
+	<h2 id = inheritance>Inheritance</h2>
+	<ul>
+		<li><p>If you specify the font-family or color properties on the <q>< body ></q> element, they will apply to most of the child elements. This is because the value of the font-family property is <b>inherited</b> by child elements.</p></li>
+		<li><p>You can force a lot of properties to inherit values from thier parent elements by using "inherit" for the value of the properties. e.g. "padding: inherit". for example, "background-color" and "border" properties are not inherited by a child class as the page would lokk messy if it it. 
+		but if you wanted them to, you would add "background-colour: inherit" to force it to be the same as its parent.</li></p>
+	</ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </body>
