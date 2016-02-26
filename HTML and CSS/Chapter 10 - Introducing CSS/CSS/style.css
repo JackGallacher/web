@@ -25,12 +25,12 @@ table /*alters all of the elements within the table tags*/
 {
 	color: rgb(108,165,122);
 }
-tr > td/*alters all of the td tags that are within any tr tags*/
+tr > td/*alters all of the td tags that are directly after any tr tags, not nested*/
 {
 		color: rgb(0,0,255);
 }
 
-tr th/*alters any th element that is within a tr tag.*/
+tr th/*alters any th element that is within a tr tag even nested ones.*/
 {
 	color: rgb(255,0,0);
 }
