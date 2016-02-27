@@ -1,0 +1,6 @@
+body{
+	font-family: arial;/*Sets the font within the body of the html document to arial*/
+}
+h1{
+	color: rgb(255,0,255);/*Set the color of any h1 tags to purple*/
+}
