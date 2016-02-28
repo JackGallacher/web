@@ -1,6 +1,24 @@
 body{
 	font-family: arial;/*Sets the font within the body of the html document to arial*/
+	background-color: rgb(200,200,200);/*Sets the background colour of the entire body element to grey*/
 }
 h1{
 	color: rgb(255,0,255);/*Set the color of any h1 tags to purple*/
+	opacity: 1.0;/*Sets the opacity of all h1 elements to 1 (fully visible). It makes no difference, I just wanted to show the code.*/
+}
+h2{
+	color: rgba(134, 22, 97, 1.0);/*Uses the rbga attribute to set the color of all h2 elements, this is just to show the code, as setting the alpha to 1 does nothin as 1.0 is fully visible.*/
+}
+h2 + ul{/*Sets the background color of any ul tag and its childeren after a h2 tag.*/
+	background-color: rgb(255,255,255);/*This will set a solid rgb color for the bacground*/
+	background-color: hsla(0, 100%, 100%, 0.5);/*This sets a more gradient background color compared to just using rgb using hsla: hue, saturation, lightness, alpha*/
+}
+#rgb{
+	color: rgb(100, 100, 90);/*RGB*/
+}
+#hexcode{
+	color: #ee3e80;/*Hex Code*/
+}
+#colornames{
+	color: DarkCyan;/*Color Names*/
 }
