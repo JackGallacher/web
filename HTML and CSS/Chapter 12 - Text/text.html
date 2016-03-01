@@ -13,4 +13,27 @@
 		<li><p>The "font-family" property allows you to specify the typeface that should be used for any text inside the element(s) to which a CSS rule applies</p></li>
 		<li><p>You can specify a list of fonts seperated by commas (arial, verdana ext.) so that if a user does not have your first choce of typeface installed, the browser can try and an alternative font from the list given</p></li>
 	</ul>
+	<h2>Size of Type</h2>
+	<ul>
+		<li><p>The "font-size" property allows you to specify a size for the font. There are several ways to specify the size of a font, the most comon are:</p></li>
+		<ol>
+			<li><p>Pixels - font-size: 12px;</p></li>
+			<li><p>Percentages: font-size = 200%; (Based on a default browser size of 16 pixels)</p></li>
+			<li><p>EMS (Width of the letter 'M') - font-size: 1.5em;</p></li> 			
+		</ol>
+	</ul>
+	<h2>More Font Choice</h2>
+	<ul>
+		<li><p>"@font-face" allows you to use a font font even if it is not installed on the computerof the person browsing, by allowing you to specofy a path to a copy of whe font which will be downloaded if it is not on the users machine.</p></li>
+		<li><p>You add the font to a style sheet using the <q>@font-face</q> rule with the properties of "font-family" (the name of the font) and src (the source of the font file). e.g. @font-face {font-family: 'ChunkFiveRegular'; src: url('fonts/chunkfive.eot'); }
+		<li><p>Different browsers support different font types, this means that you must import the correct font file type for it to work in the desired browser, the font file types for each browser are:</p></li>
+		<ul>
+			<li><p>.eot - IE 5-8, IE 9+</p></li>
+			<li><p>.woff - Chrome 6+, Firefox 3.6+, IE 9+</p></li>
+			<li><p>.ttf/.otf - Chrome 6+, Firefox 3.5, Firefox 3.6+, IE 9+, Opera 10+, Safari 3.1+, iOS 4.2+</p></li>
+			<li><p>.svg - Chrome (All), Opera 10+, Safari 3.1+, iOS < 4.2, iOs 4.2+</p></li>			
+		</ul>
+		<li><p>When importing, you will have to add a "format" attribute to the @font-face code stating the type of file that you are including. for example: @font-face {font-family: 'ChunkFiveRegular'; src: url('fonts/chunkfive.eot'); format('embedded-opentype') }
+		<li><p>In order to have the font load on all browsers, you will need to import all file types to make it compatible. You do this by just adding more "src" and "format" attributes to the @font-face tag.</p></li>
+	</ul>
 </body>

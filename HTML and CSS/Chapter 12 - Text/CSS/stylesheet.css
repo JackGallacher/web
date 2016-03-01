@@ -1,6 +1,23 @@
 body{
-	font-family: arial;
+	font-family: arial;/*This is using the "font-family" command to set all of the text inside the <body> tags to arial.*/
+	font-size: 1em;/*Using the ems method (setting size based on the size of the 'm' character, sets the body text to 1 em)*/
+}
+ol li{
+	font-size: 32px;/*Using the decendant selector, sets every <li> tag within a <ol> tag to the font size of 32 pixels*/
+}
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('aaargh-webfont.eot');
+    src: url('aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aaargh-webfont.woff2') format('woff2'),
+         url('aaargh-webfont.woff') format('woff'),
+         url('aaargh-webfont.ttf') format('truetype'),
+         url('aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 h2{
-	color: green;
+	color: green;/*Sets the color of all <h2> tags to green.*/
+	font-size: 150%;/*Sets the fond size to 150% of regular size, just doing this to show what tags you can use.*/
+	font-family: aaarghnormal;
 }
