@@ -16,7 +16,7 @@
 	<h2>Size of Type</h2>
 	<ul>
 		<li><p>The "font-size" property allows you to specify a size for the font. There are several ways to specify the size of a font, the most comon are:</p></li>
-		<ol>
+		<ol id = "fontsize">
 			<li><p>Pixels - font-size: 12px;</p></li>
 			<li><p>Percentages: font-size = 200%; (Based on a default browser size of 16 pixels)</p></li>
 			<li><p>EMS (Width of the letter 'M') - font-size: 1.5em;</p></li> 			
@@ -36,5 +36,22 @@
 		<li><p>When importing, you will have to add a "format" attribute to the @font-face code stating the type of file that you are including. for example: @font-face {font-family: 'ChunkFiveRegular'; src: url('fonts/chunkfive.eot'); format('embedded-opentype') }
 		<li><p>In order to have the font load on all browsers, you will need to import all file types to make it compatible. You do this by just adding more "src" and "format" attributes to the @font-face tag.</p></li>
 		<li><p>Also, the font files must be next to the CSS file that they are being used in</p></li>
+	</ul>
+	<h2>Bold</h2>
+	<ul>
+		<li><p>The "font-weight" property allows you to create bold text. There are two values that thisproperty commonly takes:</p></li>
+		<ol>
+			<li id = "normal"><p>"normal" - This causes the text to appear at a normal weight. font-weight: normal;</p></li>
+			<li id = "bold"><p>"bold" - This causes text to appear in bold. font-weight: bold;
+		</ol>
+	</ul>
+	<h2>Italic</h2>
+	<ul>
+		<li><p>If you want to create itallic text, you can use the "font-style" property. There are three values this property can take</p></li>
+		<ol>
+			<li id = "normalstyle"><p>"normal" - This causes the text to appear in a normal style. font-style: normal;</p></li>
+			<li id = "italic"><p>"italic" - This causes the text to appear in a italic style. font-style: italic</p></li>
+			<li id = "oblique"><p>"oblique" - This causes the text to appear in an oblique stype. fot-style: oblique</p></li>
+		</ol>
 	</ul>
 </body>

@@ -2,8 +2,8 @@ body{
 	font-family: arial;/*This is using the "font-family" command to set all of the text inside the <body> tags to arial.*/
 	font-size: 1em;/*Using the ems method (setting size based on the size of the 'm' character, sets the body text to 1 em)*/
 }
-ol li{
-	font-size: 32px;/*Using the decendant selector, sets every <li> tag within a <ol> tag to the font size of 32 pixels*/
+#fontsize{
+	font-size: 32px;/*Sets the font size of elements within the tag with the "fontsize" id*/
 }
 @font-face {
     font-family: 'aaarghnormal';
@@ -20,4 +20,19 @@ h2{
 	color: green;/*Sets the color of all <h2> tags to green.*/
 	font-size: 150%;/*Sets the fond size to 150% of regular size, just doing this to show what tags you can use.*/
 	font-family: aaarghnormal;
+}
+#normal{
+	font-weight: normal;/*Sets the text to normal using the font-weight property. This is used if the whole text was bold and you wanted to get rid of the bold setting on a certain peice of text.*/
+}
+#normalstyle{
+	font-style: normal;/*Sets the text to normal using the font-weight property. This is used if the whole text was bold and you wanted to get rid of the bold setting on a certain peice of text.*/
+}
+#bold{
+	font-weight: bold;/*Sets the text to bold using the font-weight property.*/
+}
+#italic{
+	font-style: italic;/*Using the font-style property, sets the font style to italic*/
+}
+#oblique{
+	font-style: oblique;/*Using the font-style property, sets the font style to oblique*/
 }
