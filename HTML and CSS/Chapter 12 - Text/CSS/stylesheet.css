@@ -36,3 +36,33 @@ h2{
 #oblique{
 	font-style: oblique;/*Using the font-style property, sets the font style to oblique*/
 }
+#uppercase{
+	text-transform: uppercase;/*Sets any text with the id of "uppercase" to uppercase letters.*/
+}
+#lowercase{
+	text-transform: lowercase;/*Sets any text with the id of "lower" to lowercase letters.*/
+}
+#capitalize{
+	text-transform: capitalize;/*Sets any text with the id of "capitalize" to have upper case first letters.*/
+}
+#none{
+	text-decoration: none;
+}
+#underline{
+	text-decoration: underline;
+}
+#overline{
+	text-decoration: overline;
+}
+#linethrough{
+	text-decoration: line-through;
+}
+#leading{
+	line-height: 1.4em;
+}
+#letterspace{
+	letter-spacing: 0.3em;
+}
+#wordspacing{
+	word-spacing: 1.3em;
+}
