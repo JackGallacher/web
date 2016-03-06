@@ -46,23 +46,40 @@ h2{
 	text-transform: capitalize;/*Sets any text with the id of "capitalize" to have upper case first letters.*/
 }
 #none{
-	text-decoration: none;
+	text-decoration: none;/*Removes any text-decoration currently applied to the text, or sets it so that it cant have a decoration applied to it.*/
 }
 #underline{
-	text-decoration: underline;
+	text-decoration: underline;/*Underlines the specified text.*/
 }
 #overline{
-	text-decoration: overline;
+	text-decoration: overline;/*Overlines the specified text*/
 }
 #linethrough{
-	text-decoration: line-through;
+	text-decoration: line-through;/*Put a line through text*/
 }
 #leading{
-	line-height: 1.4em;
+	line-height: 1.4em;/*Sets the gaps between lines of text.*/
 }
 #letterspace{
-	letter-spacing: 0.3em;
+	letter-spacing: 0.3em;/*Sets the space between letters.*/
 }
 #wordspacing{
-	word-spacing: 1.3em;
+	word-spacing: 1.3em;/*Sets the space between words.*/
 }
+#left{
+	text-align: left;
+}
+#right{
+	text-align: right;
+}
+#center{
+	text-align: center;
+}
+#justify{
+	text-align: justify;
+}
+
+
+
+
+
