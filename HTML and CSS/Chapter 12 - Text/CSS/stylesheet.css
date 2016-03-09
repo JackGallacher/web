@@ -87,6 +87,12 @@ h2{
 p.pseudoelements:first-letter{
 	font-size: 200px;
 }
+a:link{
+	color: deeppink;
+}
+a:visited{
+	color: green;
+}
 
 
 
