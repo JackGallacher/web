@@ -93,6 +93,15 @@ a:link{
 a:visited{
 	color: green;
 }
+#HoverButton:hover{
+	background-color: #655544;
+}
+#ActiveButton:active{
+	background-color: chocolate;
+}
+#FocusInput:focus{
+	background-color: rgb(255,0,0);
+}
 
 
 
