@@ -12,3 +12,20 @@ p.Dimensions{
 	width: 75%;
 	background-color: #e1ddda;
 }
+td.RandomParagraph{
+	min-width: 450px;
+	max-width: 650px;
+	text-align: left;
+	padding: 5px;/*This assigns space around the content.*/
+	margin: 0px;
+}
+p.Hidden{
+	max-width: 100px;
+	max-height: 100px;
+	overflow: hidden;
+}
+p.Scroll{
+	max-width: 100px;
+	max-height: 100px;/*Sets the max height of the box that the text is in.*/
+	overflow: scroll;
+}
