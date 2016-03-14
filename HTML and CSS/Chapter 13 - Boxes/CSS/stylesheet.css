@@ -29,3 +29,16 @@ p.Scroll{
 	max-height: 100px;/*Sets the max height of the box that the text is in.*/
 	overflow: scroll;
 }
+#Border{
+	border-style: solid;/*General Border style is solid.*/
+	border-top-style: dotted;/*Top border specifically set to dotted.*/
+	
+	border-color: red;
+	border-left-color: blue;
+	
+	border-width: 1px 4px 12px 4px;
+}
+#Shorthand{
+	width: 400px;
+	border: 3px solid green;/*Creatss a border 3 pixels wide, which is solid and is colored green.*/
+}
