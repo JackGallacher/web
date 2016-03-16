@@ -42,3 +42,9 @@ p.Scroll{
 	width: 400px;
 	border: 3px solid green;/*Creatss a border 3 pixels wide, which is solid and is colored green.*/
 }
+#Padding{
+	border-style: solid;
+	border-color: red;
+	width: 400px;
+	padding: 15px;/*Seperate the words 15px all around from the border.*/
+}
