@@ -48,3 +48,16 @@ p.Scroll{
 	width: 400px;
 	padding: 15px;/*Seperate the words 15px all around from the border.*/
 }
+.margin{
+	border: 2px solid blue;
+	width: 400px;
+}
+#centerbox.margin{
+	width: 400px;
+	margin: 10px auto 10px auto;/*margin order goes top, right, bottom, left. Right and Left are auto, this centers the box due to equal margin size on each side.*/
+}
+
+
+#addmargin.margin {/*Applies style to the element with the ID of "addmargin" with the class of "margin"*/
+	margin: 30px;
+}
