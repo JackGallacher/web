@@ -56,8 +56,19 @@ p.Scroll{
 	width: 400px;
 	margin: 10px auto 10px auto;/*margin order goes top, right, bottom, left. Right and Left are auto, this centers the box due to equal margin size on each side.*/
 }
-
-
 #addmargin.margin {/*Applies style to the element with the ID of "addmargin" with the class of "margin"*/
 	margin: 30px;
 }
+#display > li{
+	font-family: arial;
+	font-weight: bold;
+	color: red;
+	margin-right: 10px;
+	
+	
+	display: inline;/*Sets any li elements within the id of display to act like inline elements (on the same line)*/
+}
+#display .coming-soon{/*Allows acces to the class "coming-sonn" in the id tag of "display"*/
+	display: none;/*Sets the element with the class of "coming-soon" to "none" which means it is hidden.*/
+}
+
