@@ -71,4 +71,7 @@ p.Scroll{
 #display .coming-soon{/*Allows acces to the class "coming-sonn" in the id tag of "display"*/
 	display: none;/*Sets the element with the class of "coming-soon" to "none" which means it is hidden.*/
 }
+.boxshadow{
+	box-shadow: inset 0 0 10px #777777;
+}
 

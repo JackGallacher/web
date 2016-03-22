@@ -165,6 +165,24 @@
 		<li><p>If you do not want a blank space to appear, then you should use the "display" property with a value of "none" (display: none;) instead.</p></li>	
 	</ul>
 	
+	<h2>CSS3: Border Images</h2>
+	<ul>
+		<li><p>The "border-image" property applied an image to the border of any box. It takes a background image and slices it into nine peices</p></li>
+		<li><p>This property requires three peice of information: The location of the image (file/url), Where to slice the image and what to do with stright edges. The possible values are:</p></li>
+		<ol>
+			<li><p>border-image url(location) 11 11 11 11 stretch; - stretches the image.</p></li>
+			<li><p>border-image url(location) 11 11 11 11 repeat; - repeats the image.</p></li>
+			<li><p>border-image url(location) 11 11 11 11 round; - repeats the images, but also scales so it looks uniform.</p></li>
+		</ol>
+		<li><p>The box must have  border width for the image to be shown</p></li>
+	</ul>
+	
+	<h2>CSS3: Box Shadows</h2>
+	<ul class = "boxshadow">
+		<li><p>The "box-shadow" property allows you to add a drop shadow around the box. It works just like the text-shadow property. It must use at least the first of these two values as well as the colour:</p></li>
+		<li><p>The values are horizonal offset, vertical offset, blur distance and spread of shadow.</p></li>
+		<li><p>The "inset" keyword can be used before these values to create an inner shadow.</p></li>
+	</ul>
 
 	
 	
