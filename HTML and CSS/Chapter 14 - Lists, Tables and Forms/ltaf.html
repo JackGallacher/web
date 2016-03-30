@@ -34,5 +34,61 @@
 		<li>You can specify an image to act as a bullet point using the "list-style-image:" property</li>
 		<li>The value starts with the letters "url" and is follewed by a pair of parentheses. Inside the parentheses, the path to the image is given inside double quotes. e.g. list-style-image: url("path of image");</li>
 		<li>This property can be used on rules that apply to the <q>< ul ></q> and <q>< li ></q> elements.</li>
-	</ul>	
+	</ul>
+	<h2>Positioning the Marker</h2>
+	<ul>
+		<li>Lists are intended into the page by default and the "list-style-position" property indicates whether the market should  appearf on the inside or the outside of the box containing the main points. This property can take one of two values:</li>
+		<ul>
+			<li id = "outside">list-style-position: outside; - The marker  sits to the left of the block of text (This is defult behaviour when this property is not used).</li>
+			<li id = "inside">list-style-position: inside; - The marker sits inside of the box text (which is indented)</li>			
+		</ul>		
+	</ul>
+	<h2>List Shorthand</h2>
+	<ul>
+		<li>As with serveral of the other CSS properties, there is a property that acts as a shorthand for the list styles. "list-style" allows you to express the markers style, image and position in any order.</li>
+		<li id = "list_shorthand">list-style: square inside;</li>
+	</ul>
+	<h2>Border on Empty Cells</h2>
+	<ul>
+		<li>If you hve empty cells in your table, you can use the "empy-cells"property to specify whether or not thier borders should be shown. It can take one of three values:</li>
+		<ul>
+			<li>empty-cells: show; - This shows the border of any empy cells.</li>
+			<li>empty-cells: hide; - This hides the borders of any empty cells.</li>
+			<li>empty-cells: inherit; - If you have one trblae nested inside another, inherit the rules of the containing element.</li>
+		</ul>
+	</ul>
+	<h2>Gaps Between Cells</h2>
+	<ul>
+		<li>The "border-spacing" property allows you to control the distance between ajacent cells. By default, browsers often leave a small gap between each table cell. "border-spacing" allows you to control this gap</li>
+		<li>The value of this property is usually specified in pixels. You can specify two values if desired to specify seperate numbers for horizontal and vertical spacing.</li>
+		<li>You can use the "border-collape" property to prevent inside lines of tables cells being double that of outside lines due to sitting next to each other. The "border-collapse" property has two possible values:</li>
+		<ol>
+			<li>border-collapse: collapse; - Borders are collapsed into a single border where possible</li>
+			<li>border-collape: seperate; - Borders are detched from each other where possible.</li>
+		</ol>
+	</ul>
+	<div class = "table1">
+		<table class = "visible_example">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+		</tr>
+	</div>
+	
+	<div class = "table2">
+		<table class = "hide_example">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+		</tr>
+	</div>
+	
 </body>

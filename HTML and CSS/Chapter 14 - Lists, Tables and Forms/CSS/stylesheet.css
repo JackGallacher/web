@@ -44,3 +44,35 @@ h2{
 ul {
 	list-style-image: url("Images/Lightsaber.png");
 }
+#outside{
+	margin: 10px;
+	width: 250px;
+	list-style-position: outside;
+}
+#inside{
+	margin: 10px;
+	width: 250px;
+	list-style-position: inside;
+}
+#list_shorthand{
+	list-style: square inside;
+}
+
+td{
+	border: 1px solid blue;
+	padding: 15px;
+}
+table.visible_example{
+	
+	empty-cells: show;
+	border-collapse: collapse;/*Closes the gaps between boxes.*/
+}
+table.hide_example{
+	empty-cells: hide;
+	border-spacing: 5px 15px;/*Sets the vertical and horizontal gapos between cells.*/
+}
+
+table.visible_example, table.hide_example{/*Applies the CSS to two different class in one function*/
+	float:left;/*Sets the elements to align with each other.*/
+	width: 100px;/*Sets the max width of the tables.*/
+}
