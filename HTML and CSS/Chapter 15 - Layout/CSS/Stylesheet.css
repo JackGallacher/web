@@ -1,0 +1,14 @@
+body{
+	font-family: arial;
+}
+h1{
+	background-color: gray;
+	font-family: arial;
+	color: white;
+}
+h2{
+	text-decoration: underline;
+}
+p{
+	width: 450px;
+}
