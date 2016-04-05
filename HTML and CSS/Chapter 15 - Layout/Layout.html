@@ -7,12 +7,38 @@
 </head>
 <body>
 	<h1>Layout</h1>
-	<h2>Normal Flow</h2>
-	<ul>
+	<h2>Normal Flow - position: static;</h2>
+	<ul id = "Set_Paragraph_Width">
 		<li><p>In normal flow, each block-level element sits on top of the next one. Since this is the default way in which browsers treat HTML elements, you do not need a CSSproperty to indicate the elements should appear in normal flow, but the syntax would be: <q>position: static;</q></p></li>
 		<li><p>I have not specified a <b>width:</b> property for the heading element, so you can see how it streatches the width of the entire browser window by default.</p></li>
 		<li><p>The paragraphs have been restricted to 450 pixels wide. This shows how the elements in normal flow start on a new line even if they do not take up the full width of the browser window.</p></li>
 	</ul>
-
-
+	
+	<h2>Relative Positioning - position: relative;</h2>
+	<ul>
+		<li><p>Relative positioning moves an element in relation to where it would have been in normal flow.</p></li>
+		<li><p>For example, ypu can move it 10 pixels lower than it would have been in normal flow or 20% to the right.</p></li>
+		<li><p>You can indicate that an element should be relativly positioned by using <q>position: relative;</q>		
+		<li><p>You can then use the offset properties (top and bottom and left or right) to indicate how far to move the element from where it would have been in normal flow.</p></li>
+		<ul id = "Relative_Move">
+			<li><p>To move the box up or down, you can use either the <q>top</q> or <q>bottom</q> properties.</p></li>
+			<li><p>To move the box horizonatally, you can use either the <q>left</q> or <q>right</q> properties.</p></li>
+		</ul>
+	</ul>
+	
+	<h2 id = "Absolute_Move">Absolute Positioning - position: absolute;</h2>
+	<ul id = "Set_Paragraph_Width">
+		<li><p>When the position property is given a value of absolute, the box is taken out of normal flow and no longer affects the position of other elements on the page. (They act like its not there.)</p></li>
+		<li><p>The box offset properties (top, bottom, left, right) specify where the element should appear in relation to containing element.</p></li>
+		<li><p>In this example, the heading has been positioned 500 pixels from its left edge. The width of the heading is set to be 250 pixels wide.</p></li>
+		<li><p>The width property has also been applied to the <q>< p ></q> elements in this example to provent the text from overlapping and becoming unreadable.</p></li>			
+	</ul>
+	
+	<h2 id = "Set_Fixed_Position">Fixed Positioning - position: fixed;</h2>
+	<ul id = "Add_Margin">
+		<li><p>Fixed positioning is a type of absolute positioning the requires the position property to have a value of fixed.</p></li>
+		<li><p>It positions the element in relation to the browser. Therefore, when a user scrolls down a page, it stays in the exact same place.</p></li>
+		<li><p>To control where the fixed position box appears in relation to the browser window, the box offset properties arw used (top, bottom, left, right)</p></li>
+		<li><p>The <q>< p ></q> elements are in normal flow and ignore the space the the heading element would have taken up. Therefore, the <q>margin: top;</q> has been used to push the first <q>< p ></q> element below where the fixed heading is sitting.</p></li>
+	</ul>
 </body>

@@ -9,6 +9,22 @@ h1{
 h2{
 	text-decoration: underline;
 }
-p{
+ul#Set_Paragraph_Width { /*Sets the paragraph width of any elements within a ul tag with the id of "Set_Paragraph_Width"*/
 	width: 450px;
+}
+ul#Relative_Move{
+	position: relative;
+	left: 100px;
+}
+h2#Absolute_Move{
+	position: absolute;
+	top: 600px;
+	left: 500px;
+	width: 250px;
+}
+h2#Set_Fixed_Position{
+	position: fixed;
+}
+ul#Add_Margin{
+	margin-top: 100px;
 }
