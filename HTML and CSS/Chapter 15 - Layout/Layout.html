@@ -41,4 +41,25 @@
 		<li><p>To control where the fixed position box appears in relation to the browser window, the box offset properties arw used (top, bottom, left, right)</p></li>
 		<li><p>The <q>< p ></q> elements are in normal flow and ignore the space the the heading element would have taken up. Therefore, the <q>margin: top;</q> has been used to push the first <q>< p ></q> element below where the fixed heading is sitting.</p></li>
 	</ul>
+	
+	<h2 id = "Set_Z">Overlapping Elements - z-index</h2>
+	<ul id = "Overlap_Relative">
+		<li><p>When you use relative, absolute or fixed positioning, boxes can overlap. If boxes do overlap, the elements that appear later in the HTML code sit on top those that are earlier in the page.</p></li>
+		<li><p>If you want to control which element sits on top, you can use the <q>z-index</q> property. its vaue is a number, and the higher the number, the closer that element is to the front. For example, an element with a <q>z-index</q> of 10 will appear over the top of on with a <q>z-index</q> of 5</p></li>
+		<li><p>In this example, we use <q>position: relative;</q> for the paragraphs. Becuase the paragraphs are relativly positioned, by default they would appear over the top of the heading as the user scrolls down the page.
+			To ensure the <q>< h2 ></q> element stays on top, we use the <q>z-index</q> property on the rule for the <q>< h2 ></q> element</p></li>
+		<li><p>The <q>z-index</q> is sometimes reffered to as <b>stacking content</b> (As if the block have been stacked on top of each other and the z-axis). It is the equivilant of using the 'bring to front' and 'send to back' features.</p></li>		
+	</ul>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	
+	<h2 id = "Float_Heading">Floating Elements - float</h2>
+	<ul>
+		<li><p>The <q>float</q> property allows you to take an element in normal flow and place it as far to the left or right of the containing element as possible.</p></li>
+		<li><p>Anything else that sits inside the containing element will flow around the element that is floated.</p></li>
+		<li><p>When you use the <q>float</q> property, you should also use the <q>width</q> property to indicate how wide the floated element should be. If you do not, results can be inconsistent but the box is likley to take up the full width of the containing element (just like it would in normal flow)</p></li>
+		<li><p>In this example, the <q>< h2 ></q> element is floated to the right and the paragraphs the follow the heading flow around the floated header.</p></li>
+	</ul>
 </body>

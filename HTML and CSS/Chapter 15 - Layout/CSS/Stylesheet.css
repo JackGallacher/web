@@ -28,3 +28,19 @@ h2#Set_Fixed_Position{
 ul#Add_Margin{
 	margin-top: 100px;
 }
+#Overlap_Relative{
+	position: relative;
+	top: 90px;
+	width: 450px;
+}
+#Set_Z{
+	position: fixed;
+	padding: 10px;
+	z-index: 10;
+	background-color: gray;
+}
+#Float_Heading{
+	float: left;
+	width: 250px;
+	margin-right: 25px;/*Gave the float element a margin to make the text move around it in a readable format.*/
+}
