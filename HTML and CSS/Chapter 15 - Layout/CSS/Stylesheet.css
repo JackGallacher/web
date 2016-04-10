@@ -44,3 +44,19 @@ ul#Add_Margin{
 	width: 250px;
 	margin-right: 25px;/*Gave the float element a margin to make the text move around it in a readable format.*/
 }
+#Float_Side{
+	width: 230px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	background-color: #efefef;
+}
+#Float_Clear{
+	width: 230px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	background-color: #efefef;
+		
+	clear: both;/*All elements in this example have thier clear set to both, this puts them in a vertical line as they cannotg have any elements touching thier left or right side.*/
+}
