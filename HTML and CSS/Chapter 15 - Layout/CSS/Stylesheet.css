@@ -58,5 +58,5 @@ ul#Add_Margin{
 	padding: 5px;
 	background-color: #efefef;
 		
-	clear: both;/*All elements in this example have thier clear set to both, this puts them in a vertical line as they cannotg have any elements touching thier left or right side.*/
+	clear: both;/*All elements in this example have thier clear set to both, this puts them in a vertical line as they cannot have any elements touching thier left or right side.*/
 }
