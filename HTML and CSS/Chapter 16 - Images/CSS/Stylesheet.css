@@ -1,0 +1,26 @@
+body{
+	font-family: arial;
+}
+h1{
+	color: white;
+	background: rgb(153, 204, 255);	
+}
+div#Contents{
+	border: 1px solid black;
+}
+ul{
+	list-style-type: square;
+}
+img.large{
+	width: 200px;
+	height: 200px;
+}
+img.medium{
+	width: 150px;
+	height: 150px;
+}
+img.small{
+	width: 100px;
+	height: 100px;
+}
+
