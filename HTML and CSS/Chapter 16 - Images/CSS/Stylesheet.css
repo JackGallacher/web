@@ -1,5 +1,6 @@
 body{
 	font-family: arial;
+	background-image: url("Images/Background.gif");
 }
 h1{
 	color: white;
@@ -23,7 +24,11 @@ img.small{
 	width: 100px;
 	height: 100px;
 }
-align-left{
+img.align-left{
 	float: left;
+}
+img.center-image{
+	display: block;
+	margin: 0px auto;
 }
 
