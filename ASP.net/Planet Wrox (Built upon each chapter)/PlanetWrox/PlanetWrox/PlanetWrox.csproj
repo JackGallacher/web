@@ -94,8 +94,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C. Styles\Styles.css" />
     <Content Include="D. Demos\CodeBehind.aspx" />
     <Content Include="D. Demos\CodeInline.aspx" />
+    <Content Include="D. Demos\CSSDemo.aspx" />
     <Content Include="D. Demos\TableDemo.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="packages.config" />
@@ -137,6 +139,13 @@
     <Compile Include="D. Demos\CodeInline.aspx.designer.cs">
       <DependentUpon>CodeInline.aspx</DependentUpon>
     </Compile>
+    <Compile Include="D. Demos\CSSDemo.aspx.cs">
+      <DependentUpon>CSSDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\CSSDemo.aspx.designer.cs">
+      <DependentUpon>CSSDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="D. Demos\TableDemo.aspx.cs">
       <DependentUpon>TableDemo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,7 +164,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="B. Controls\" />
-    <Folder Include="C. Styles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

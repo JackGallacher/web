@@ -11,7 +11,7 @@ namespace PlanetWrox.D._Demos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "Hello World! The time is now: " + Convert.ToString(DateTime.Now);//This takes the ID of the label in the .aspx file and alters what is does using c#.                                   
+            Label1.Text = "Hello World! The time is now: " + Convert.ToString(DateTime.Now);//This takes the ID of the label in the .aspx file and alters what is does using c#.                               
         }      
     }
 }
