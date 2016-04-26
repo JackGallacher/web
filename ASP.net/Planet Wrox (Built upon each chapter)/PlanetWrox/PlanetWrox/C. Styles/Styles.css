@@ -14,6 +14,8 @@
 h1
 {
     font-size: 20px;
+    padding: 0;/*Hardcodes padding for this element so it remains constant accross browsers.*/
+    margin: 0 0 10px 0; /*This removes the margins from the top, right and left of the element but add a bit of space at the bottom of it. Hordcoding this ensures it remains constant among other browsers.*/
 }
 
 .Introduction
