@@ -97,6 +97,7 @@
     <Content Include="C. Styles\Styles.css" />
     <Content Include="D. Demos\CodeBehind.aspx" />
     <Content Include="D. Demos\CodeInline.aspx" />
+    <Content Include="D. Demos\Containers.aspx" />
     <Content Include="D. Demos\ControlsDemo.aspx" />
     <Content Include="D. Demos\CSSDemo.aspx" />
     <Content Include="D. Demos\ListControls.aspx" />
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="D. Demos\CodeInline.aspx.designer.cs">
       <DependentUpon>CodeInline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="D. Demos\Containers.aspx.cs">
+      <DependentUpon>Containers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\Containers.aspx.designer.cs">
+      <DependentUpon>Containers.aspx</DependentUpon>
     </Compile>
     <Compile Include="D. Demos\ControlsDemo.aspx.cs">
       <DependentUpon>ControlsDemo.aspx</DependentUpon>
