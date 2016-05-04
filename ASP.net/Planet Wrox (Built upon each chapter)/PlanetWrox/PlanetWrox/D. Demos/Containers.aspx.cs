@@ -17,6 +17,13 @@ namespace PlanetWrox.D._Demos
         protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             Panel1.Visible = CheckBox1.Checked;// Sets the "visible" variable of Panel1 to true if CheckBox1 has been changed and returns "true" e.g. Panel1.Visible(false) = CheckBox1.Checked(true), false = true.
+            Panel2.Visible = CheckBox1.Checked;
+        }
+
+        protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)//This is triggered when the "Finish" button is pressed on the Wizard.
+        {
+            Result.Text = "Your name is " + YouName.Text;
+            Result.Text += "<br/> Your favorite language is " + FavoriteLanguage.SelectedValue;
         }
     }
 }
