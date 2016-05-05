@@ -15,14 +15,14 @@
         <asp:Panel ID="Panel2" runat="server" Visible="false">
             <asp:Wizard ID="Wizard1" runat="server" Width="500px" ActiveStepIndex="0" OnFinishButtonClick="Wizard1_FinishButtonClick" ><%--The "OnFinishButtonClick" defines the name of the C# funtion to be executed when the finish button is pressed on the wizard. definitioes of button presses go here.--%>
                 <WizardSteps>
-                    <asp:WizardStep runat="server" Title="About You">
+                    <asp:WizardStep runat="server" Title="About You" StepType="Auto">
                         <asp:Label ID="Label1" runat="server" Text="Type your name"/>
-                        <asp:TextBox ID="YouName" runat="server"/>
+                        <asp:TextBox ID="YourName" runat="server"/>
                     </asp:WizardStep>
                     <asp:WizardStep runat="server" Title="Favorite Language" StepType ="Finish"><%--"Finish" defines this part of the Wizard as the last window, so it displays a "Finish" button--%>
                         <asp:DropDownList ID="FavoriteLanguage" runat="server">
                             <asp:ListItem>C#</asp:ListItem>
-                            <asp:ListItem>Visaual Basic</asp:ListItem>
+                            <asp:ListItem>Visual Basic</asp:ListItem>
                             <asp:ListItem>CSS</asp:ListItem>
                         </asp:DropDownList>
                     </asp:WizardStep>

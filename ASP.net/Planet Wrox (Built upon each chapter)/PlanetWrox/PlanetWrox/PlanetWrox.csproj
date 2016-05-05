@@ -101,6 +101,7 @@
     <Content Include="D. Demos\ControlsDemo.aspx" />
     <Content Include="D. Demos\CSSDemo.aspx" />
     <Content Include="D. Demos\ListControls.aspx" />
+    <Content Include="D. Demos\State.aspx" />
     <Content Include="D. Demos\TableDemo.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="packages.config" />
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="D. Demos\ListControls.aspx.designer.cs">
       <DependentUpon>ListControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="D. Demos\State.aspx.cs">
+      <DependentUpon>State.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\State.aspx.designer.cs">
+      <DependentUpon>State.aspx</DependentUpon>
     </Compile>
     <Compile Include="D. Demos\TableDemo.aspx.cs">
       <DependentUpon>TableDemo.aspx</DependentUpon>

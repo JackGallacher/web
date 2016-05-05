@@ -22,7 +22,7 @@ namespace PlanetWrox.D._Demos
 
         protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)//This is triggered when the "Finish" button is pressed on the Wizard.
         {
-            Result.Text = "Your name is " + YouName.Text;
+            Result.Text = "Your name is " + YourName.Text;
             Result.Text += "<br/> Your favorite language is " + FavoriteLanguage.SelectedValue;
         }
     }
