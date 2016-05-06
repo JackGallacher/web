@@ -17,7 +17,7 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Label" EnableViewState="true"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Label" EnableViewState="true"></asp:Label><!--The "ViewState" enables a Web page to persist changes to the state of a Web Form across postbacks-->
                 </td>
                 <td>
                     <asp:Button runat="server" ID="SetDate" Text="Set Date" OnClick="SetDate_Click" />
