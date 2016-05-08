@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="C. Styles\Styles.css" />
+    <Content Include="D. Demos\CalculatorDemo.aspx" />
     <Content Include="D. Demos\CodeBehind.aspx" />
     <Content Include="D. Demos\CodeInline.aspx" />
     <Content Include="D. Demos\Containers.aspx" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="A. MasterPages\Frontend.Master.designer.cs">
       <DependentUpon>Frontend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="D. Demos\CalculatorDemo.aspx.cs">
+      <DependentUpon>CalculatorDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\CalculatorDemo.aspx.designer.cs">
+      <DependentUpon>CalculatorDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="D. Demos\CodeBehind.aspx.cs">
       <DependentUpon>CodeBehind.aspx</DependentUpon>
