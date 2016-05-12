@@ -11,7 +11,7 @@ namespace PlanetWrox
 {
 
 
-    public partial class Default
+    public partial class Login
     {
     }
 }
