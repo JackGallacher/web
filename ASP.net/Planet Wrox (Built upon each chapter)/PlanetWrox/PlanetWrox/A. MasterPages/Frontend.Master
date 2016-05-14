@@ -16,7 +16,9 @@
             <header><a href="/">Header Goes Here</a></header>
             <nav>Menu Goes Here</nav>
             <section id="MainContent">
-                <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                    This is default text that shows up in content pages that don't explicitly override it.
+                </asp:ContentPlaceHolder>
             </section>
             <aside id="Sidebar">Sidebar Goes Here</aside><!--"aside" Defines stuff that will go in the sidebar of the page, its just a tag to nicely frame the data-->
             <footer id="Footer">Footer Goes Here</footer>
