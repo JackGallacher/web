@@ -7,7 +7,7 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="../C.%20Styles/Styles.css" rel="stylesheet" />
+    <!--<link href="../C.%20Styles/Styles.css" rel="stylesheet" />  Becuase the main layout of the website is going to be controlled by a sitewide theme, we no longer need to link this CSS file to the master page. As the theme will control what the site looks like.-->
     <script src="/scripts/modernizr-2.8.3.js"></script><!--Removing the two periods before the /scripts ensures that the borwsers downloads this script from the "Scripts" folder in the root of the site, no matter where the page that uses this master page is located. ASP manages this for CSS files automatically.-->
 </head>
 <body>
