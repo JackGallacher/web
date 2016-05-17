@@ -217,6 +217,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Themes\DarkGrey\Images\" />
+    <Folder Include="App_Themes\Monochrome\Images\" />
     <Folder Include="B. Controls\" />
     <Folder Include="C. Styles\" />
   </ItemGroup>
