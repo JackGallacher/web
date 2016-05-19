@@ -1,0 +1,2 @@
+﻿<asp:Button CssClass="MyButton" BackColor="#509EE7" runat="server" /><!--This skin automitically calls the Monochrome.css file and also calls the style called .MyButton from within it.-->
+<asp:Button BackColor="Red" Forecolor="Black" SkinID="RedButton" runat="server"/><!--Sets a specific SkinID that a button created in this theme can be styled by. SkinID overrides the general skin for an element.-->

@@ -103,6 +103,7 @@
     <Content Include="D. Demos\ControlsDemo.aspx" />
     <Content Include="D. Demos\CSSDemo.aspx" />
     <Content Include="D. Demos\ListControls.aspx" />
+    <Content Include="D. Demos\SkinsDemo.aspx" />
     <Content Include="D. Demos\State.aspx" />
     <Content Include="D. Demos\TableDemo.aspx" />
     <Content Include="Default.aspx" />
@@ -112,6 +113,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="A. MasterPages\Frontend.Master" />
+    <Content Include="App_Themes\Monochrome\Button.skin" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -185,6 +187,13 @@
     </Compile>
     <Compile Include="D. Demos\ListControls.aspx.designer.cs">
       <DependentUpon>ListControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="D. Demos\SkinsDemo.aspx.cs">
+      <DependentUpon>SkinsDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\SkinsDemo.aspx.designer.cs">
+      <DependentUpon>SkinsDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="D. Demos\State.aspx.cs">
       <DependentUpon>State.aspx</DependentUpon>
