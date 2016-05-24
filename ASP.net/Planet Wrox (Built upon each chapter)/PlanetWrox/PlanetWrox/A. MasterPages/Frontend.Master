@@ -15,9 +15,16 @@
         <div id ="PageWrapper">
             <header><a href="/"></a></header><%--The <a href="/"> means that when the header is clicked, the default page is loaded as it is a link to the root of the site. --%>
             <nav>
-                <asp:Menu runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" StaticEnableDefaultPopOutImage="false" Orientation="Horizontal"/><%--This calls the MainMenu css styling which is found in the Monochrome theme. Therofore this menu will only be suatable for the monochrome theme at the moment.--%>
+                <asp:Menu id="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" StaticEnableDefaultPopOutImage="false" Orientation="Horizontal"/><%--This calls the MainMenu css styling which is found in the Monochrome theme. Therofore this menu will only be suatable for the monochrome theme at the moment.--%>
                 <%--StaticEnableDefaultPopOutImage defines whether an image should be displayed to show that the menu item has a sub-menu on hover.--%>
                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false"/>
+
+                <asp:TreeView id="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="false">
+                    <LevelStyles>
+                        <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
+                    </LevelStyles>
+                </asp:TreeView>
+           
             </nav>
             <section id="MainContent">
                 <asp:ContentPlaceHolder ID="cpMainContent" runat="server">

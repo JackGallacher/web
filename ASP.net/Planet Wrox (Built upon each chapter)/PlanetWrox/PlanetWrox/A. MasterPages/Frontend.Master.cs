@@ -29,6 +29,21 @@ namespace PlanetWrox.MasterPages
                 }
             }
 
+            switch(Page.Theme.ToLower())//Sets the page theme to lower case.
+            {
+                case "darkgrey"://If the theme is "Dark Grey"
+                    Menu1.Visible = false;
+                    TreeView1.Visible = true;
+                    break;
+                default://The default case, if the theme is not "Dark Grey"
+                    Menu1.Visible = true;
+                    TreeView1.Visible = false;
+                    break;
+            }
+
+
+
+
         }
 
         protected void ThemeSelected(object sender, EventArgs e)
