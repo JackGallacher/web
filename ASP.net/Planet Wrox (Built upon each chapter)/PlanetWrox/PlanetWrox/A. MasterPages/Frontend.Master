@@ -27,6 +27,9 @@
            
             </nav>
             <section id="MainContent">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server"/><%--Adds the site map path to the site, this shows the breadcrum trail that the user has followed on the site.--%>
+                <br/>
+                <br/>
                 <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
                     This is default text that shows up in content pages that don't explicitly override it.
                 </asp:ContentPlaceHolder>

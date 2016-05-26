@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//Master Pages should define the look and feel of pages.
 namespace PlanetWrox.MasterPages
 {
     public partial class Frontend : System.Web.UI.MasterPage

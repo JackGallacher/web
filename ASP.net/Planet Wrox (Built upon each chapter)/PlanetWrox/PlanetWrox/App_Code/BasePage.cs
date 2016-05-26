@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+//Basepages should define the global functionality of pages.
 namespace PlanetWrox.App_Code
 {
     public class BasePage : System.Web.UI.Page//This class inherits from "System.Web.UI.Page" so then each class created in each page can then inherit from "BasePage" so uniform funtionality can be given to each page.
