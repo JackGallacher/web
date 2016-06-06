@@ -108,8 +108,10 @@
     <Content Include="D. Demos\CSSDemo.aspx" />
     <Content Include="D. Demos\ListControls.aspx" />
     <Content Include="D. Demos\SkinsDemo.aspx" />
+    <Content Include="D. Demos\Source.aspx" />
     <Content Include="D. Demos\State.aspx" />
     <Content Include="D. Demos\TableDemo.aspx" />
+    <Content Include="D. Demos\Target.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="E. About\AboutUs.aspx" />
     <Content Include="E. About\Contact.aspx" />
@@ -208,6 +210,13 @@
     <Compile Include="D. Demos\SkinsDemo.aspx.designer.cs">
       <DependentUpon>SkinsDemo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="D. Demos\Source.aspx.cs">
+      <DependentUpon>Source.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\Source.aspx.designer.cs">
+      <DependentUpon>Source.aspx</DependentUpon>
+    </Compile>
     <Compile Include="D. Demos\State.aspx.cs">
       <DependentUpon>State.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -221,6 +230,13 @@
     </Compile>
     <Compile Include="D. Demos\TableDemo.aspx.designer.cs">
       <DependentUpon>TableDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="D. Demos\Target.aspx.cs">
+      <DependentUpon>Target.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="D. Demos\Target.aspx.designer.cs">
+      <DependentUpon>Target.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
