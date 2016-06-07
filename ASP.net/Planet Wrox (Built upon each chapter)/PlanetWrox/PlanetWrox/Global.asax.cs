@@ -14,7 +14,7 @@ namespace PlanetWrox
         protected void Application_Start(object sender, EventArgs e)
         {
             //Code that runs on application startup.
-            RouteConfig.RegisterRoutes(System.Web.Routing.RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(System.Web.Routing.RouteTable.Routes);//This runs the "RegisterRoutes" function in the RouteConfig class in App_Code.         
         }
 
         protected void Session_Start(object sender, EventArgs e)
