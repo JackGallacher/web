@@ -100,6 +100,7 @@
   <ItemGroup>
     <Content Include="App_Themes\DarkGrey\DarkGrey.css" />
     <Content Include="App_Themes\Monochrome\Monochrome.css" />
+    <Content Include="B. Controls\Banner.ascx" />
     <Content Include="D. Demos\CalculatorDemo.aspx" />
     <Content Include="D. Demos\CodeBehind.aspx" />
     <Content Include="D. Demos\CodeInline.aspx" />
@@ -119,6 +120,8 @@
     <Content Include="F. Reviews\All.aspx" />
     <Content Include="F. Reviews\AllByGenre.aspx" />
     <Content Include="F. Reviews\Default.aspx" />
+    <Content Include="G. Images\Banner120x240.gif" />
+    <Content Include="G. Images\Banner486x60.gif" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
@@ -154,6 +157,13 @@
     </Compile>
     <Compile Include="App_Code\Calculator.cs" />
     <Compile Include="App_Code\RouteConfig.cs" />
+    <Compile Include="B. Controls\Banner.ascx.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="B. Controls\Banner.ascx.designer.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
     <Compile Include="D. Demos\CalculatorDemo.aspx.cs">
       <DependentUpon>CalculatorDemo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -302,7 +312,6 @@
   <ItemGroup>
     <Folder Include="App_Themes\DarkGrey\Images\" />
     <Folder Include="App_Themes\Monochrome\Images\" />
-    <Folder Include="B. Controls\" />
     <Folder Include="C. Styles\" />
   </ItemGroup>
   <PropertyGroup>
