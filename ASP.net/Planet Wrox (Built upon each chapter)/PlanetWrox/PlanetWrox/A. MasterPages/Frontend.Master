@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="PlanetWrox.MasterPages.Frontend" %>
+<%@ Register Src="~/B. Controls/Banner.ascx" TagName="Banner" TagPrefix="uc1" %> <%--This registers the banner to the Master Page, letting you add it to the page and every other page.--%>
 
 <!DOCTYPE html>
 
@@ -41,6 +42,12 @@
                     <asp:ListItem Text="Monochrome" />
                     <asp:ListItem Text="Dark Grey" Value="DarkGrey" />
                 </asp:DropDownList>
+
+                <br />
+                <br />
+                <br />
+
+                <uc1:Banner ID="Banner1" runat="server" /><%--This display the banner, ir uses the tagprefix:taname to implement it, plus the regular runat and ID properties.--%>
 
             </aside><!--"aside" Defines stuff that will go in the sidebar of the page, its just a tag to nicely frame the data-->
             <footer id="Footer">Footer Goes Here</footer>

@@ -5,9 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PlanetWrox.B._Controls
+
+namespace PlanetWrox
 {
-    public partial class Banner : System.Web.UI.UserControl
+    public partial class Controls_Banner : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
